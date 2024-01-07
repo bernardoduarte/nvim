@@ -5,6 +5,14 @@ vim.keymap.set("n", "<C-j>", ":wincmd j<CR>", { desc = "Navigate to lower pane" 
 vim.keymap.set("n", "<C-h>", ":wincmd h<CR>", { desc = "Navigate to left pane" })
 vim.keymap.set("n", "<C-l>", ":wincmd l<CR>", { desc = "Navigate to right pane" })
 
+-- Remap allowing for deletion without cutting
+vim.keymap.set({"n", "v"}, "<leader>d", "\"_d")
+-- Remap allowing copy-paste from clipboard
+vim.keymap.set({"n", "v"}, "<leader>y", "\"+y")
+vim.keymap.set({"n", "v"}, "<leader>Y", "\"+Y")
+vim.keymap.set({"n", "v"}, "<leader>p", "\"+p")
+vim.keymap.set({"n", "v"}, "<leader>P", "\"+P")
+
 vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", {})
 vim.keymap.set("n", "<C-A-n>", ":Neotree filesystem close left<CR>", {})
 
