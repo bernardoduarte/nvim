@@ -16,4 +16,43 @@ return {
             })
         end,
     },
+    {
+        "sindrets/diffview.nvim",
+        config = function()
+            require("diffview").setup({
+                keymaps = {
+                    view = {
+                        {
+                            "n",
+                            "q",
+                            function()
+                                vim.cmd(":DiffviewClose")
+                            end,
+                            { desc = "Close the diff" },
+                        },
+                    },
+                    file_panel = {
+                        {
+                            "n",
+                            "q",
+                            function()
+                                vim.cmd(":DiffviewClose")
+                            end,
+                            { desc = "Close the diff" },
+                        },
+                    },
+                    file_history_panel = {
+                        {
+                            "n",
+                            "q",
+                            function()
+                                vim.cmd(":DiffviewClose")
+                            end,
+                            { desc = "Close the diff" },
+                        },
+                    },
+                },
+            })
+        end,
+    },
 }

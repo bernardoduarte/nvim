@@ -14,8 +14,8 @@ vim.keymap.set({"n", "v"}, "<leader>p", "\"+p")
 vim.keymap.set({"n", "v"}, "<leader>P", "\"+P")
 
 vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", {})
-vim.keymap.set("n", "<C-A-n>", ":Neotree filesystem close left<CR>", {})
-vim.keymap.set("n", "<C-g>", ":Neotree git_status<CR>", {})
+vim.keymap.set("n", "<C-A-n>", ":Neotree filesystem close<CR>", {})
+vim.keymap.set("n", "<C-g>", ":Neotree git_status reveal float<CR>", {})
 vim.keymap.set("n", "<C-A-g>", ":Neotree git_status close<CR>", {})
 
 vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
